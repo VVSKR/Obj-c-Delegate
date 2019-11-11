@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F153FA5F23758CD500643292 /* VSGuest.m in Sources */ = {isa = PBXBuildFile; fileRef = F153FA5E23758CD500643292 /* VSGuest.m */; };
+		F153FA6223758CFB00643292 /* VSWaiter.m in Sources */ = {isa = PBXBuildFile; fileRef = F153FA6123758CFB00643292 /* VSWaiter.m */; };
+		F153FA6523758D0A00643292 /* VSKitchen.m in Sources */ = {isa = PBXBuildFile; fileRef = F153FA6423758D0A00643292 /* VSKitchen.m */; };
 		F19EC287237584AA0046088D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F19EC286237584AA0046088D /* AppDelegate.m */; };
 		F19EC28A237584AA0046088D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F19EC289237584AA0046088D /* ViewController.m */; };
 		F19EC28D237584AA0046088D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F19EC28B237584AA0046088D /* Main.storyboard */; };
@@ -16,6 +19,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F148CAFC2378DDDD005FE7E2 /* GuestDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GuestDelegate.h; sourceTree = "<group>"; };
+		F148CAFD2378DDFD005FE7E2 /* WaiterProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaiterProtocol.h; sourceTree = "<group>"; };
+		F148CAFE2378DE3F005FE7E2 /* KitchenProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KitchenProtocol.h; sourceTree = "<group>"; };
+		F153FA5D23758CD500643292 /* VSGuest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSGuest.h; sourceTree = "<group>"; };
+		F153FA5E23758CD500643292 /* VSGuest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSGuest.m; sourceTree = "<group>"; };
+		F153FA6023758CFB00643292 /* VSWaiter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSWaiter.h; sourceTree = "<group>"; };
+		F153FA6123758CFB00643292 /* VSWaiter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSWaiter.m; sourceTree = "<group>"; };
+		F153FA6323758D0A00643292 /* VSKitchen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSKitchen.h; sourceTree = "<group>"; };
+		F153FA6423758D0A00643292 /* VSKitchen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSKitchen.m; sourceTree = "<group>"; };
+		F1933651237639BC0054EEA5 /* WaiterDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaiterDelegate.h; sourceTree = "<group>"; };
 		F19EC282237584AA0046088D /* Delegate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Delegate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F19EC285237584AA0046088D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F19EC286237584AA0046088D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -39,6 +52,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F148CAFF2378E8D7005FE7E2 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				F148CAFD2378DDFD005FE7E2 /* WaiterProtocol.h */,
+				F148CAFE2378DE3F005FE7E2 /* KitchenProtocol.h */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		F193364D237626000054EEA5 /* Guest */ = {
+			isa = PBXGroup;
+			children = (
+				F153FA5D23758CD500643292 /* VSGuest.h */,
+				F153FA5E23758CD500643292 /* VSGuest.m */,
+			);
+			path = Guest;
+			sourceTree = "<group>";
+		};
+		F193364E2376260A0054EEA5 /* Waiter */ = {
+			isa = PBXGroup;
+			children = (
+				F153FA6023758CFB00643292 /* VSWaiter.h */,
+				F153FA6123758CFB00643292 /* VSWaiter.m */,
+			);
+			path = Waiter;
+			sourceTree = "<group>";
+		};
+		F193364F237626130054EEA5 /* Kitchen */ = {
+			isa = PBXGroup;
+			children = (
+				F153FA6323758D0A00643292 /* VSKitchen.h */,
+				F153FA6423758D0A00643292 /* VSKitchen.m */,
+			);
+			path = Kitchen;
+			sourceTree = "<group>";
+		};
+		F193365023762C040054EEA5 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				F19EC288237584AA0046088D /* ViewController.h */,
+				F19EC289237584AA0046088D /* ViewController.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		F1933653237648480054EEA5 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				F148CAFC2378DDDD005FE7E2 /* GuestDelegate.h */,
+				F1933651237639BC0054EEA5 /* WaiterDelegate.h */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
 		F19EC279237584AA0046088D = {
 			isa = PBXGroup;
 			children = (
@@ -60,8 +127,12 @@
 			children = (
 				F19EC285237584AA0046088D /* AppDelegate.h */,
 				F19EC286237584AA0046088D /* AppDelegate.m */,
-				F19EC288237584AA0046088D /* ViewController.h */,
-				F19EC289237584AA0046088D /* ViewController.m */,
+				F193364D237626000054EEA5 /* Guest */,
+				F193364E2376260A0054EEA5 /* Waiter */,
+				F193364F237626130054EEA5 /* Kitchen */,
+				F148CAFF2378E8D7005FE7E2 /* Protocol */,
+				F1933653237648480054EEA5 /* Delegate */,
+				F193365023762C040054EEA5 /* VC */,
 				F19EC28B237584AA0046088D /* Main.storyboard */,
 				F19EC28E237584AC0046088D /* Assets.xcassets */,
 				F19EC290237584AC0046088D /* LaunchScreen.storyboard */,
@@ -142,6 +213,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F19EC28A237584AA0046088D /* ViewController.m in Sources */,
+				F153FA5F23758CD500643292 /* VSGuest.m in Sources */,
+				F153FA6223758CFB00643292 /* VSWaiter.m in Sources */,
+				F153FA6523758D0A00643292 /* VSKitchen.m in Sources */,
 				F19EC295237584AC0046088D /* main.m in Sources */,
 				F19EC287237584AA0046088D /* AppDelegate.m in Sources */,
 			);
